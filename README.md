@@ -45,7 +45,7 @@ Path: C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\Code.exe
 
 ```toml
 [dependencies]
-windows = { version = "0.52", features = [
+windows = { version = "0.58", features = [
     "Win32_Foundation",
     "Win32_UI_Accessibility",
     "Win32_System_Threading",
