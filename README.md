@@ -15,7 +15,7 @@
 * **库**: `windows-rs` (Microsoft 官方提供的 Windows API 绑定)
 * `Win32::UI::Accessibility`: 用于设置事件钩子。
 * `Win32::System::ProcessStatus`: 用于获取进程模块信息。
-
+*  `Win32::UI::WindowsAndMessaging`: 用于消息循环处理。
 
 
 ## 📋 运行预览
