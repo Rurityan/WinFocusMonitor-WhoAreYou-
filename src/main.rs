@@ -45,7 +45,7 @@ unsafe extern "system" fn win_event_proc(
         GetWindowThreadProcessId(hwnd, Some(&mut pid));
 
         // 获取路径
-        let path = get_process_path(pid).unwrap_or_else(|| "Unknown Path".to_string());
+        let path = get_process_path(pid).unwrap_or_else(|| "Unknown Path (Access Denied: Try running as Administrator)".to_string());
 
         if !title.is_empty() {
             println!("--- Focus Switched ---");
