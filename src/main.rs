@@ -7,7 +7,7 @@ use windows::Win32::UI::WindowsAndMessaging::{
     EVENT_SYSTEM_FOREGROUND, MSG, WINEVENT_OUTOFCONTEXT,
 };
 
-/// 根据 PID 获取进程的可执行文件路径
+// 根据 PID 获取进程的可执行文件路径
 fn get_process_path(pid: u32) -> Option<String> {
     unsafe {
         // 1. 获取进程句柄
