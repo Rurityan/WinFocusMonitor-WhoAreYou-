@@ -72,7 +72,6 @@ fn main() {
         );
 
         let mut msg = MSG::default();
-        // 使用 None 代替 HWND(0) 解决类型不匹配问题
         while GetMessageW(&mut msg, None, 0, 0).as_bool() {
             DispatchMessageW(&msg);
         }
